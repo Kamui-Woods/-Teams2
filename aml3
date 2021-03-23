@@ -1,0 +1,145 @@
+      - !ruby/regexp /features\/.*.rb$/
+    - !ruby/regexp /test\/.*.rb$/
+    - lib/jekyll/document.rb
+    - lib/jekyll/site.rb
+    - lib/jekyll/commands/serve.rb
+    - lib/jekyll/configuration.rb
+  Max: 240
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - lib/jekyll/utils.rb
+    - lib/jekyll/commands/serve.rb
+  Max: 11
+Metrics/MethodLength:
+  CountComments: false
+  Max: 20
+  Severity: error
+Metrics/ModuleLength:
+  Exclude:
+    - lib/jekyll/filters.rb
+  Max: 240
+Metrics/ParameterLists:
+  Max: 4
+Metrics/PerceivedComplexity:
+  Max: 13
+
+Minitest/AssertInDelta:
+  Enabled: true
+Minitest/AssertionInLifecycleHook:
+  Enabled: true
+Minitest/AssertKindOf:
+  Enabled: true
+Minitest/AssertOutput:
+  Enabled: true
+Minitest/AssertPathExists:
+  Enabled: true
+Minitest/AssertSilent:
+  Enabled: true
+Minitest/LiteralAsActualArgument:
+  Enabled: true
+Minitest/TestMethodName:
+  Enabled: false
+Minitest/MultipleAssertions:
+  Enabled: true
+Minitest/RefuteInDelta:
+  Enabled: true
+Minitest/RefuteKindOf:
+  Enabled: true
+Minitest/RefutePathExists:
+  Enabled: true
+Minitest/UnspecifiedException:
+  Enabled: true
+
+Naming/FileName:
+  Enabled: false
+Naming/HeredocDelimiterNaming:
+  Exclude:
+    - test/**/*.rb
+Naming/MemoizedInstanceVariableName:
+  Exclude:
+    - lib/jekyll/convertible.rb
+    - lib/jekyll/drops/site_drop.rb
+    - lib/jekyll/drops/unified_payload_drop.rb
+    - lib/jekyll/page_without_a_file.rb
+
+Performance/AncestorsInclude:
+  Enabled: false
+Performance/ArraySemiInfiniteRangeSlice:
+  Enabled: true
+Performance/BigDecimalWithNumericArgument:
+  Enabled: true
+Performance/BlockGivenWithExplicitBlock:
+  Enabled: true
+Performance/ChainArrayAllocation:
+  Enabled: true
+Performance/CollectionLiteralInLoop:
+  Enabled: true
+Performance/ConstantRegexp:
+  Enabled: true
+Performance/MethodObjectAsBlock:
+  Enabled: true
+Performance/RedundantSortBlock:
+  Enabled: true
+Performance/RedundantStringChars:
+  Enabled: true
+Performance/ReverseFirst:
+  Enabled: true
+Performance/SortReverse:
+  Enabled: false
+Performance/Squeeze:
+  Enabled: true
+Performance/StringInclude:
+  Enabled: true
+  Exclude:
+    - lib/jekyll/utils/platforms.rb
+Performance/Sum:
+  Enabled: true
+
+Security/MarshalLoad:
+  Exclude:
+    - !ruby/regexp /test\/.*.rb$/
+    - lib/jekyll/regenerator.rb
+Security/YAMLLoad:
+  Exclude:
+    - !ruby/regexp /features\/.*.rb/
+    - !ruby/regexp /test\/.*.rb$/
+
+Style/AccessModifierDeclarations:
+  Enabled: false
+Style/AccessorGrouping:
+  Enabled: false
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+Style/AndOr:
+  Severity: error
+Style/ArgumentsForwarding:
+  Enabled: false
+Style/ArrayCoercion:
+  Enabled: true
+Style/BisectedAttrAccessor:
+  Enabled: true
+Style/CaseLikeIf:
+  Enabled: true
+Style/ClassAndModuleChildren:
+  Exclude:
+    - test/**/*.rb
+Style/ClassEqualityComparison:
+  Enabled: true
+Style/CollectionCompact:
+  Enabled: true
+Style/CombinableLoops:
+  Enabled: true
+Style/DocumentDynamicEvalDefinition:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Style/EndlessMethod:
+  Enabled: true
+Style/ExplicitBlockArgument:
+  Enabled: false
+Style/ExponentialNotation:
+  Enabled: true
+Style/FormatStringToken:
+  Exclude:
