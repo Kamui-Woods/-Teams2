@@ -1,0 +1,99 @@
+ - lib/jekyll/utils/ansi.rb
+    - lib/jekyll/liquid_renderer/table.rb
+    - lib/jekyll/profiler.rb
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always
+Style/GlobalStdStream:
+  Enabled: true
+Style/GuardClause:
+  Enabled: false
+Style/HashAsLastArrayItem:
+  Enabled: true
+Style/HashConversion:
+  Enabled: true  
+Style/HashEachMethods:
+  Enabled: true
+Style/HashExcept:
+  Enabled: true
+Style/HashLikeCase:
+  Enabled: true
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+  Severity: error
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: true
+Style/IfWithBooleanLiteralBranches:
+  Enabled: true
+Style/KeywordParametersOrder:
+  Enabled: true
+Style/MixinUsage:
+  Exclude:
+    - test/helper.rb
+Style/ModuleFunction:
+  Enabled: false
+Style/MultilineTernaryOperator:
+  Severity: error
+Style/NegatedIfElseCondition:
+  Enabled: true
+Style/NilLambda:
+  Enabled: true
+Style/OptionalBooleanParameter:
+  Enabled: true
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%Q": "{}"
+    "%W": ()
+    "%q": "{}"
+    "%r": "!!"
+    "%s": ()
+    "%w": ()
+    "%x": ()
+Style/RedundantArgument:
+  Enabled: true
+Style/RedundantAssignment:
+  Enabled: true
+Style/RedundantFetchBlock:
+  Enabled: false
+Style/RedundantFileExtensionInRequire:
+  Enabled: true
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+Style/RedundantRegexpEscape:
+  Enabled: true
+Style/RedundantSelfAssignment:
+  Enabled: true
+Style/RegexpLiteral:
+  EnforcedStyle: percent_r
+Style/RescueModifier:
+  Enabled: false
+Style/SafeNavigation:
+  Exclude:
+    - lib/jekyll/document.rb
+Style/SignalException:
+  EnforcedStyle: only_raise
+Style/SingleArgumentDig:
+  Enabled: true
+Style/SlicingWithRange:
+  Enabled: false
+Style/SoleNestedConditional:
+  Enabled: true
+Style/StringConcatenation:
+  Enabled: true
+  Exclude:
+    - lib/jekyll/commands/*.rb
+    - test/**/*.rb
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+Style/SwapValues:
+  Enabled: true
+Style/SymbolArray:
+  EnforcedStyle: brackets
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+  
